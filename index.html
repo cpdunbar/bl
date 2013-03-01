@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<style>
+  html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+</style>
+
+<script>
+  var scenes = [
+    'school-small.jpg',
+    'hites.jpg',
+    'primary-school.jpg',
+    'rink.jpg',
+    'the-attic.jpg',
+    'poultry-festival-small.jpg'
+  ];
+  var html = document.body.parentNode;
+  var scene = scenes[Math.floor(Math.random() * scenes.length)];
+  html.style.background = 'url(/img/' + scene + ') no-repeat center center fixed';
+  html.style.backgroundSize = 'cover';
+</script>
